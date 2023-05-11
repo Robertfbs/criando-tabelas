@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com Tabelas - DIO</title>
+    <style>
+        table tr:nth-child(even) {
+            background-color: burlywood;
+        }
+        table tr:hover td {
+            background-color: darkgray;
+        }
+
+        
+    </style>
 </head>
 <body>
-    <table border="1" width="250" cellspacing alight>
+    <table summary="Descrição explicativa da tabela, para leitura de robô" border="1" width="250"  align="center">
+        <!-- cellspacing="15" cellpadding="15" 
+            Tudo que é "id" em HTML = em CSS é "#"
+            Tudo que é "class" em HTML = em CSS é "."
+        
+        -->
         <tr>
-            <td>Nome</td>
-            <td>Idade</td>
+            <th title="Nome Completo">Nome</th>
+            <th>Idade</th>
         </tr>
-        <tr>
-            <td>Diogo</tr>   
-            <td>37</tr>
+        <tr id="um">
+            <td>Diogo</td>   
+            <td>37</td>
+        </tr>
+
+        <tr id="dois">
+            <td>Maria</td>   
+            <td>34</td>
+        </tr>
+
+        <tr id="três">
+            <td>João</td>   
+            <td>32</td>
+        </tr>
+
+        <tr id="quatro">
+            <td>Valter</td>   
+            <td>42</td>
+        </tr>
+
+        <tr id="cinco">
+            <td>Valkyria</td>   
+            <td>19</td>
         </tr>
     </table>
 </body>
